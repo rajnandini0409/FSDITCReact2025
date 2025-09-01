@@ -1,0 +1,37 @@
+/* body{
+    background-color: aqua;
+} */
+ .container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    /* gap: 10px; */
+    background-color: aquamarine;
+    border:1px solid red;
+ }
+ .child1{
+    background-color: aqua;
+    border: 1px dotted red;
+    height: 300px;
+    width: 300px;
+    order: 2;
+ }
+  .child2{
+    background-color: rgb(132, 255, 0);
+    border: 1px dotted red;
+    height: 300px;
+    width: 300px;
+ }
+  .child3{
+    background-color: rgb(98, 127, 246);
+    border: 1px dotted red;
+    height: 300px;
+    width: 300px;
+ }
+  .child4{
+    background-color: rgb(245, 35, 102);
+    border: 1px dotted red;
+    height: 300px;
+    width: 300px;
+ }
