@@ -1,57 +1,104 @@
 .box{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 400px 500px 200px;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: 100px 70px 500px 200px;
+    /* gap:10px; */
+    background-color: dimgrey;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end:5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color:rgb(0, 0, 0);
+    border: 1px solid black;
+    display:flex;
+    color:white;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subheader{
+    grid-column-start: 1;
+    grid-column-end:5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #232f3e;
+    display:flex;
+    color:white;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.subheader :hover{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    cursor: pointer;
 }
 .box1{
-    border: 1px dotted red;
-    background-color: aqua;
-    /* grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2; */
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 10px;
+border: 1px dotted red;
+background-color: rgb(252, 252, 252);
+display: grid;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(2,1fr);
+/* grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 2; */
+gap: 10px;
+margin: 10px;
 }
 .box11{
-     border: 1px dotted red;
-    background-color: rgb(0, 255, 132);
-    height: 100px;
-    width: 100px;
-    margin-top: 20px;
-    margin-left: 20px;
+width: 150px;
+height: 150px;
+border: 1px solid red;
+background-color: chartreuse;
+margin-top: 20px;
+margin-left: 10px;
 }
+
 .box12{
-     border: 1px dotted red;
-    background-color: rgb(221, 255, 0);
-    height: 100px;
-    width: 100px;
-    margin-top: 20px;
+    width: 150px;
+height: 150px;
+border: 1px solid red;
+background-color:bisque;
+margin-top: 20px;
 }
 .box13{
-     border: 1px dotted red;
-    background-color: rgb(34, 0, 255);
-    height: 100px;
-    width: 100px;
-    margin-left: 20px;
+    width: 150px;
+height: 150px;
+border: 1px solid red;
+background-color:cornsilk;
+margin-left: 10px;
 }
+
 .box14{
-     border: 1px dotted red;
-    background-color: rgb(238, 0, 255);
-    height: 100px;
-    width: 100px;
+    width: 150px;
+height: 150px;
+border: 1px solid red;
+background-color:darkgrey
 }
 .box2{
-     border: 1px dotted red;
-    background-color: rgb(0, 255, 132);
+border: 1px dotted red;
+background-color:rgb(255, 255, 255);
+margin: 10px;
 }
+
 .box3{
-     border: 1px dotted red;
-    background-color: rgb(34, 0, 255);
+border: 1px dotted red;
+background-color:rgb(255, 255, 255);
+margin: 10px;
 }
 .box4{
-     border: 1px dotted red;
-    background-color: rgb(255, 0, 0);
+border: 1px dotted red;
+background-color: rgb(255, 255, 255);
+margin: 10px;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end:5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: rgb(61, 60, 60);
+    color: white;
+    border: 1px solid red;
 }
