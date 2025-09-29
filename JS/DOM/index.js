@@ -97,9 +97,69 @@ const mypromise= new Promise((resolve,reject)=>{
 // .finally(()=>{
 //    console.log("All the resources have been closed successfully")
 // })
-async function handleData(){
-   // const result=mypromise;
-  const data= await mypromise;
-  console.log(data)
+// async function handleData(){
+//    // const result=mypromise;
+//   const data= await mypromise;
+//   console.log(data)
+// }
+// handleData();
+
+// const button=document.getElementById('btn');
+// const disp=document.getElementById('disp');
+// disp.style.backgroundColor="skyblue";
+// disp.style.padding="10px";
+// disp.style.align="center";
+// let table='<table border=1> ';
+//  async function fetchData(){
+//    disp.innerHTML="<h2>Data is loading....</h2>";
+//       const response=await fetch('https://dummyjson.com/recipes');
+//       const jsonData=await response.json();
+//       console.log(jsonData.recipes);
+//       // console.log(jsonData.recipes[0].id);
+//       // console.log(jsonData.recipes[0].img);
+//    //   disp.innerHTML = `
+//    //   <h2>${jsonData.recipes[0].name} (ID: ${jsonData.recipes[0].id})</h2>
+//    //   <img src="${jsonData.recipes[0].image}" width="200" />
+//    // `;
+//    jsonData.recipes.forEach(element => {
+//       table+=`<tr >
+
+//       <td background-color:"red"><img src= ${element.image} height=200 width=200 alt='image'></td>
+//       <td>${element.id}</td>
+//       <td>${element.name}</td>
+//       <td>${element.ingredients}</td>
+//       </tr>`
+//    });
+//    table+='</table>';
+//    disp.innerHTML=table;
+// }
+// button.addEventListener('click',fetchData);
+
+const button=document.getElementById('btn');
+const disp=document.getElementById('disp');
+disp.style.backgroundColor="skyblue";
+let table='<table border=1> ';
+ async function fetchData(){
+   disp.innerHTML="<h2>Data is loading....</h2>";
+      const response=await fetch('https://dummyjson.com/users');
+      const jsonData=await response.json();
+      console.log(jsonData.users);
+      // console.log(jsonData.users[0].id);
+      // console.log(jsonData.users[0].img);
+   //   disp.innerHTML = `
+   //   <h2>${jsonData.users[0].name} (ID: ${jsonData.users[0].id})</h2>
+   //   <img src="${jsonData.users[0].image}" width="200" />
+   // `;
+   jsonData.users.forEach(element => {
+      table+=`<tr >
+
+      <td background-color:"red"><img src= ${element.image} height=200 width=200 alt='image'></td>
+      <td>${element.id}</td>
+      <td>${element.firstName}</td>
+      <td>${element.lastName}</td>
+      </tr>`
+   });
+   table+='</table>';
+   disp.innerHTML=table;
 }
-handleData();
+button.addEventListener('click',fetchData);
