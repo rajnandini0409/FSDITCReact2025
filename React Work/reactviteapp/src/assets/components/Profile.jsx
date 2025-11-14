@@ -3,9 +3,9 @@ import React from 'react'
 function Profile() {
   return (
     <div>
-        <h3>Profile</h3>
-        <img src='' height={200} width={200} alt='Profile pic'></img>
-    </div>
+       <h3>This is my profile Page</h3>
+       <img src='https://www.flexjobs.com/blog/wp-content/uploads/2022/06/07130847/How-to-Put-Your-Work-Samples-Online.jpg' height={200} width={200} alt='Profile pic' />
+        </div>
 
   )
 }
